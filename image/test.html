@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="website Icon" type="png" href="logo%20mini.png">
+    <title>Amazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark py-2">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" height="45" width="110"/></a>
+
+        <!-- Livraison -->
+        <div class="text-white me-3 d-none d-md-block">
+            <button class="text-white bg-dark border-0">
+                <small>Livrer au</small><br>
+                <strong><i class="bi bi-geo-alt"></i> Sénégal</strong>
+            </button>
+        </div>
+
+        <!-- Recherche -->
+        <div class="input-group w-50">
+            <button class="btn p-2 bg-secondary nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tous
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            <input type="search" class="form-control" placeholder="Rechercher sur Amazon">
+            <button class="btn bg-warning" type="button">
+                <i class="bi bi-search" style="color: black;"></i>
+            </button>
+        </div>
+
+        <!-- Zone droite -->
+        <div class="d-flex align-items-center text-white ms-3">
+
+            <!-- Langue -->
+            <!-- Langue (Dropdown) -->
+            <div class="dropdown me-4 d-none d-md-block">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="France.png" width="20"/>  FR</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="En.png" width="20"/>  EN</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="es.png" width="20"/> ESP</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="All.png" width="20"/>  ALL</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><img src="Sn.png" width="20"/>  SN</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Compte & commandes -->
+            <div class="me-4 d-md-block">
+               <button class="text-white bg-dark border-0">
+                   <small>Bonjour, identifiez-vous</small><br>
+                   <strong>Compte et Listes</strong>
+               </button>
+            </div>
+
+            <div class="me-4 d-none d-md-block">
+                <button class="text-white bg-dark border-0">
+                    <small>Retours</small><br>
+                    <strong>et Commandes</strong>
+                </button>
+            </div>
+
+            <!-- Panier -->
+            <div class="me-2">
+                <a href="#" class="text-white position-relative">
+                    <i class="bi bi-cart3 fs-4"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-dark" style="background-color: #232f3e">
+    <div class=" d-flex align-items-center p-2">
+        <button class="navbar-toggler btn btn-secondary text-white border-0 d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon me-2"></span> Tous
+        </button>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn text-light">Offres du jour</button>
+            <button type="button" class="btn text-light">Enregistrement</button>
+            <button type="button" class="btn text-light">Prime vidéo</button>
+            <button type="button" class="btn text-light">Cartes-cadeaux</button>
+            <button type="button" class="btn text-light">Service client</button>
+            <button type="button" class="btn text-light">Vendre</button>
+        </div>
+        <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="background-color: #232f3e">
+                <h2 class="offcanvas-title text-light" id="offcanvasExampleLabel"><i class="bi bi-person-circle me-2"></i>Hello, sign in</h2>
+                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <h5>Digital Content & Devices</h5>
+                </div>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Prime Video
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Amazon Music
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Kindle E-readers & Books
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Amazon Appstore
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <hr class="my-2 border border-dark">
+                <div>
+                    <h5>Shop by Department</h5>
+                </div>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Electronics
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Computers
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Smart Home
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex justify-content-between align-items-center cursor-pointer">
+                    Arts & Crafts
+                    <i class="bi bi-chevron-compact-right"></i>
+                </p>
+                <p class=" d-flex  align-items-center cursor-pointer">
+                    see all
+                    <i class="bi bi-chevron-compact-down"></i>
+                </p>
+                <hr class="my-2 border border-dark">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div style="background-color: #22345a">
+    <div class="d-flex justify-content-center g-5">
+        <img src="prime au dessus.png" height="60" width="100"/>
+    </div>
+    <div class="m-3 mt-3">
+        <h1 class="text-light text-center fw-bold">
+            Join Prime and <br>
+            elevate your Amazon experience
+        </h1>
+        <h4 class="text-light text-center">
+            Free delivery, award-winning TV, exclusive deals, <br>and more
+        </h4>
+        <p class="text-light text-center">
+            Prime is only $14.99/month (plus tax). Cancel anytime.
+        </p>
+        <a href="#" class="text-light d-flex justify-content-center">
+            Explore other plans
+        </a>
+        <button class="bg-warning d-flex justify-content-center">
+            Join Prime
+        </button>
+        <a href="#" class="text-light d-flex justify-content-end">
+            Are you a student or 18-24 years old?<br>
+        </a>
+        <a href="#" class="text-light d-flex justify-content-end">
+            Receiving government assistance?<br>
+        </a>
+    </div>
+</div>
+<div>
+    <h1 class="text-primary text-center mt-5 fw-bold">
+        Check out what's included with Prime:
+    </h1>
+</div>
+<div class="m-5 d-flex justify-content-center">
+    <div class="col text-center">
+        <img src="Chaussures.png" height="150" width="240"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Fast, free delivery
+        </h5>
+        <p>
+            Enjoy Same-Day, One-Day,
+            and Two-Day <br>Delivery on millions of items.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="tele pop.png" height="150" width="240"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Popular movies & shows
+        </h5>
+        <p>
+            New releases. <br>Award-winning Amazon Originals.
+            <br>Watch what you love on your favorite devices with limited ads.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="carton.png" height="150" width="240"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Exclusive deals & savings
+        </h5>
+        <p>
+            Enjoy daily deals on thousands of items
+            <br>and access exclusive savings events like Prime Day.
+        </p>
+    </div>
+</div>
+<div>
+    <h1 class="text-primary text-center mt-5 fw-bold">
+        More Prime benefits
+    </h1>
+</div>
+<div class="m-5 d-flex justify-content-center">
+    <div class="col text-center">
+        <img src="galerie.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Amazon Photos
+        </h5>
+        <p>
+            Enjoy unlimited, full-resolution photo storage.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="musique.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Amazon Music
+        </h5>
+        <p>
+            Get the largest catalog of ad-free top podcasts
+            <br>and shuffle play any artist, album,
+            <br>or playlist on Amazon Music.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="gaming.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Prime Gaming
+        </h5>
+        <p>
+            Get games, a Twitch channel subscription,
+            <br>and more gaming benefits every month.
+        </p>
+    </div>
+</div>
+<div class="m-5 d-flex justify-content-center">
+    <div class="col text-center">
+        <img src="voiture.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Prime Fuel Savings Offer
+        </h5>
+        <p>
+            Save 10¢ a gallon at over <br>7,000 participating stations.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="paquet.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Grubhub+
+        </h5>
+        <p>
+            Free Grubhub+ which includes $0 delivery fees,
+            <br>lower service fees, and exclusive savings.
+        </p>
+    </div>
+    <div class="col text-center">
+        <img src="medoc.png" height="80" width="80"/>
+        <h5 class="text-primary text-center fw-bold mt-3">
+            Rx savings
+        </h5>
+        <p>
+            Save on prescriptions at 60,000 pharmacies,
+            <br>including Walgreens, CVS, and Amazon Pharmacy.
+        </p>
+    </div>
+</div>
+<div class="bg-dark py-4">
+    <h1 class="text-light text-center fw-bold">
+        Choose your plan
+    </h1>
+</div>
+<div class="bg-dark row justify-content-center g-2">
+    <div class="col-auto">
+        <div class="card h-100" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="text-center fw-bold card-title">Prime Mensuel</h5>
+                <h1 class="text-center fw-bold mb-2">14,99 $</h1>
+                <p class="card-text text-center">
+                    par mois après l'essai
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="card h-100" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="text-center fw-bold card-title">Prime Annuelle</h5>
+                <h1 class="text-center fw-bold mb-2">139 $</h1>
+                <p class="card-text text-center">
+                    par an après le procès
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="card h-100" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="text-center fw-bold card-title">Prime pour les <br>
+                    jeunes adultes
+                </h5>
+                <h1 class="text-center fw-bold mb-2">7,49 $</h1>
+                <p class="card-text text-center">
+                    par mois après l'essai
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="card h-100" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="text-center fw-bold card-title">Accès privilégié</h5>
+                <h1 class="text-center fw-bold mb-2">6,99 $</h1>
+                <p class="card-text text-center">
+                    par mois après l'essai
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="m-4 d-flex justify-content-center">
+        <button class="button-fluid bg-warning">
+            Commencez votre essai gratuit de 30 jours
+        </button>
+    </div>
+</div>
+<div class="bg-primary">
+    <div class="py-4">
+        <h6 class="text-light text-center fw-bold">
+            En savoir plus sur les réductions sur les forfaits jusqu'à 50 % pour :
+        </h6>
+    </div>
+    <div class="pb-5 row">
+        <div class="col-6 d-flex justify-content-end">
+            <button>
+                18-24 ans étudiants
+                <i class="bi bi-caret-right-fill"></i>
+            </button>
+        </div>
+        <div class="col-6">
+            <button>
+                Aide gouvernementale qualifié
+                <i class="bi bi-caret-right-fill"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div>
+    <h1 class="text-primary text-center mt-5 fw-bold">
+        Vous vous demandez peut-être
+    </h1>
+</div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h1 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Où puis-je en savoir plus sur les différents avantages Prime ?
+            </button>
+        </h1>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Pour en savoir plus sur tous les avantages offerts par Prime,
+                visitez amazon.com/exploreprimebenefits
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h1 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Puis-je partager mes avantages Prime avec d’autres membres du foyer ?
+            </button>
+        </h1>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Les membres Prime peuvent partager certains avantages avec un autre adulte de leur foyer Amazon.
+                L'abonnement Prime pour jeunes adultes n'inclut pas le partage des avantages Prime avec le foyer.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h1 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Si je ne suis pas satisfait, quelle est la politique d'annulation de Prime ? Serai-je remboursé ?
+            </button>
+        </h1>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Si vous avez souscrit à votre abonnement Prime directement auprès de nous, vous pouvez l'annuler à tout moment en accédant à votre compte et en modifiant vos paramètres d'abonnement. Les membres payants n'ayant pas utilisé leurs avantages peuvent prétendre à un remboursement intégral de leur abonnement en cours.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Quand serai-je facturé pour mon adhésion ?
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Lorsque votre période d'essai gratuite ou d'adhésion se termine, nous facturerons automatiquement la période d'adhésion suivante.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <button class="col-12" onclick="window.location.href='#nav'">
+        Retour en haut
+    </button>
+</div>
+<div class="bg-dark row justify-content-center py-5 g-5">
+    <div class="col-auto">
+        <div>
+            <h5 class="text-light fw-bold">
+                Apprenez à nous connaître
+            </h5>
+        </div>
+        <p class="text-light text-started">
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Carrières</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Blog</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> A propos d'Amazon</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Relation avec les investisseurs</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Appareils Amazon</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Amazon Science</a><br>
+        </p>
+    </div>
+    <div class="col-auto">
+        <div>
+            <h5 class="text-light fw-bold">
+                Gagnez de l'argent avec nous
+            </h5>
+        </div>
+        <p class="text-light text-started">
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Gagnez de l'argent avec nous</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Vendre sur Amazon Business</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Vendre des applications sur amazon</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Devenez un affilié</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Faites la publicité de vos produits</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Auto-publiez avec nous</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Héberger un amazon Hub</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Gagner de l'argent avec nous</a><br>
+        </p>
+    </div>
+    <div class="col-auto">
+        <div>
+            <h5 class="text-light fw-bold">
+                Produits de paiement Amazon
+            </h5>
+        </div>
+        <p class="text-light text-started">
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Carte de visite Amazon</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Achetez avec des points</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Rechargez votre solde</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Convertisseur de devises Amazon</a><br>
+        </p>
+    </div>
+    <div class="col-auto">
+        <div>
+            <h5 class="text-light fw-bold">
+                Laissez-nous vous aider
+            </h5>
+        </div>
+        <p class="text-light text-started">
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Amazon et la COVID-19</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Votre compte</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Vos commandes</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Tarifs et politiques d'expédition</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Retours et remplacements</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Gérer votre contenu et vos appareils</a><br>
+            <a class="text-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"> Aide</a><br>
+        </p>
+    </div>
+</div>
+</body>
+</html>
+Est ce que tu me mettre tout texte censé apparaitre dans le site en français car certains sont en anglais
+<div class="col ">
+    <button class="btn btn-secondary text-light p-2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="Sn.png" width="20"/>  Sénégal</button>
+    <ul class="dropdown-menu" style="background-color: #c8c5c5">
+        <li>
+            <a class="dropdown-item" href="#"><img src="En.png" width="20"/>  Etats Unis</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="#"><img src="es.jpeg" width="20"/> Espagne</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="#"><img src="All.png" width="20"/>  Allemagne</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="#"><img src="France.png" width="20"/>  France</a>
+        </li>
+
+    </ul>
+</div>
